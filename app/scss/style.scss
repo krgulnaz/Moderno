@@ -1,15 +1,2 @@
-html {
-    box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
-body {
-    border-color: green;
-    background-color: #fff;
-    font-size: 15px;
-}
+@import 'vars';
+@import 'global';

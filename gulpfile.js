@@ -5,7 +5,7 @@ let gulp = require('gulp'),
 const { task } = require('gulp');
 
 gulp.task('sass', function() {
-    return gulp.src('app/scss/style.scss')
+    return gulp.src('app/scss/**/*.scss')
         .pipe(sass({ outputStyle: 'expanded' }))
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('app/css'))
